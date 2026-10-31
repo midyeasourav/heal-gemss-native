@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "HEAL GEMSS",
+    "slug": "heal-gemss-native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#042f24"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.numerosouravmidya.healgemss",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "HEAL GEMSS uses camera to upload unboxing videos for damage inspection.",
+        "NSPhotoLibraryUsageDescription": "HEAL GEMSS needs access to photo library for return verification."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#042f24"
+      },
+      "package": "in.numerosouravmidya.healgemss",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#c5a059"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "healgemss-mobile-app-2026"
+      },
+      "woocommerceStoreUrl": "https://numerosouravmidya.in",
+      "currency": "INR",
+      "supportWhatsapp": "919083125067"
+    }
+  }
+}
